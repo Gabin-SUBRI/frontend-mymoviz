@@ -11,7 +11,7 @@ function Home() {
   const [moviesData, setMoviesData] = useState([]);
   console.log(moviesData);
   useEffect(() => {
-    fetch("http://localhost:3000/movies")
+    fetch("backend-mymoviz.vercel.app/movies")
       .then((response) => response.json())
       .then((data) => {
         setMoviesData(data.movies);
